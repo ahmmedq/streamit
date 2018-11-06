@@ -50,7 +50,7 @@ client.user.setAvatar(argresult);
       } else
 if (message.content.startsWith(adminprefix + '7')) {
   client.user.setGame(argresult, "https://www.twitch.tv/wxy-wew");
-    message.channel.sendMessage(`**Streaming          "``${argresult}``"**`)
+    message.channel.sendMessage(`**Streaming          "${argresult}"**`)
 }
 
 
