@@ -29,7 +29,7 @@ client.on('ready', () => {
 });
 
 
-const adminprefix = "ا";
+const adminprefix = "a";
 const devs = ['438862789302419464'];
 client.on('message', message => {//for dev
   var argresult = message.content.split(` `).slice(1).join(' ');
@@ -48,7 +48,7 @@ return message.reply("**من فضلك يجب عليك الانتظآر لمدة 
 client.user.setAvatar(argresult);
   message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
       } else
-if (message.content.startsWith(adminprefix + 'رطغرل')) {
+if (message.content.startsWith(adminprefix + '7')) {
   client.user.setGame(argresult, "https://www.twitch.tv/wxy-wew");
     message.channel.sendMessage(`**Streaming          "``${argresult}``"**`)
 }
