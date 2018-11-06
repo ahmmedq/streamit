@@ -29,15 +29,13 @@ client.on('ready', () => {
 });
 
 
-const adminprefix = "a";
-const devs = ['501074813704470543'];
+const devs = ['460606140666085378' ,'438862789302419464'];
 client.on('message', message => {//for dev
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
 
-if (message.content.startsWith(adminprefix + 'a')) {
+if (message.content.startsWith('a7')) {
   client.user.setGame(argresult, "https://www.twitch.tv/faresgameryt");
-    message.channel.sendMessage(`**Streaming Done**
 }
 
 
