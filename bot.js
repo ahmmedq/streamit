@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-//client.user.setGame(` Ltt `,"http://twitch.tv/S-F")
+client.user.setGame(` x Crew `,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -27,19 +27,6 @@ client.on('ready', () => {
   console.log('')
   console.log('')
 });
-
-
-const devs = ['460606140666085378' ,'438862789302419464'];
-client.on('message', message => {//for dev
-  var argresult = message.content.split(` `).slice(1).join(' ');
-    if (!devs.includes(message.author.id)) return;
-
-if (message.content.startsWith('a7')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/faresgameryt");
-}
-
-
-    });
 
 
 client.login(process.env.BOT_TOKEN);
